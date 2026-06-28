@@ -1,7 +1,8 @@
-from flask import Flask, render_template, request, redirect, url_for, session
+from flask import Flask, render_template, request, redirect, url_for, session, Response
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
+SITE_URL = "https://tourify-anywhere.onrender.com"
 app.secret_key = 'tourismproject'
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
@@ -179,6 +180,52 @@ def logout():
     session.pop('user', None)
     return redirect(url_for('home'))
 
+# ---------------- SEO ---------------- #
+
+@app.route("/robots.txt")
+def robots():
+    return Response(
+        f"""User-agent: *
+Allow: /
+
+Sitemap: {SITE_URL}/sitemap.xml
+""",
+        mimetype="text/plain"
+    )
+
+
+@app.route("/sitemap.xml")
+def sitemap():
+    pages = [
+        "",
+        "/destinations",
+        "/agra",
+        "/goa",
+        "/shimla",
+        "/manali",
+        "/jaipur",
+        "/kerala",
+        "/kashmir",
+        "/delhi",
+        "/login",
+        "/register"
+    ]
+
+    xml = """<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+"""
+
+    for page in pages:
+        xml += f"""
+<url>
+<loc>{SITE_URL}{page}</loc>
+</url>
+"""
+
+    xml += "</urlset>"
+
+    return Response(xml, mimetype="application/xml")
+
 
 # MAIN
 
@@ -187,4 +234,4 @@ if __name__ == '__main__':
     with app.app_context():
         db.create_all()
 
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=5000)
