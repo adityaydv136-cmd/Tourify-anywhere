@@ -934,7 +934,7 @@ body {
   margin-bottom: 32px;
 }
 
-.home-page { position: relative; overflow: hidden; }
+.home-page { position: relative;}
 .features-section {
   position: relative;
   z-index: 1;
