@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shimla Tourism — Tourify</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<canvas id="stars-canvas"></canvas>
+<nav class="navbar">
+  <a href="/" class="nav-logo">TOUR<span>IFY</span></a>
+  <ul class="nav-links"><li><a href="/destinations">← All Destinations</a></li><li><a href="/logout">Logout</a></li></ul>
+</nav>
+<section class="detail-hero">
+  <img class="detail-hero-img" src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=1200" alt="Shimla">
+  <div class="detail-hero-overlay"></div>
+  <div class="detail-hero-content">
+    <span class="detail-tag">✦ Himachal Pradesh ✦</span>
+    <h1 class="detail-hero-title">Shimla</h1>
+  </div>
+</section>
+<div class="detail-body">
+  <div class="detail-main">
+    <div class="detail-section"><h2 class="detail-section-title"><span class="icon">🌍</span> About Shimla</h2><p>Shimla, the Queen of Hills, sits at 2,206 meters above sea level — a colonial-era hill station wrapped in cedar forests, draped in snowfall and alive with the charm of a bygone era. The Mall Road and Ridge remain India's most scenic promenades.</p></div>
+    <div class="detail-section"><h2 class="detail-section-title"><span class="icon">📍</span> Top Attractions</h2><ul class="detail-list"><li>Mall Road</li><li>Kufri</li><li>Jakhoo Temple</li><li>The Ridge</li><li>Viceregal Lodge</li></ul></div>
+    <div class="detail-section">
+      <h2 class="detail-section-title"><span class="icon">🖼️</span> Photo Gallery</h2>
+      <div class="gallery-3d">
+        <img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=1200?w=400&q=80" alt="Shimla 1">
+        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400?w=400&q=80" alt="Shimla 2">
+        <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=400?w=400&q=80" alt="Shimla 3">
+      </div>
+    </div>
+    <div class="detail-section"><h2 class="detail-section-title"><span class="icon">🍽️</span> Famous Food</h2><p>Himachali Siddu, Madra (chickpea curry), Chha Gosht, Aktori pancakes, and locally brewed apple cider.</p></div>
+    <div class="detail-section"><h2 class="detail-section-title"><span class="icon">🎯</span> Popular Activities</h2><p>Trekking through cedar forests, snowfall photography, ice skating at Kufri, shopping on Mall Road, and heritage walks past British-era buildings.</p></div>
+    <div class="detail-section"><h2 class="detail-section-title"><span class="icon">🏨</span> Recommended Hotels</h2><ul class="detail-list"><li>Hotel Willow Banks</li><li>Snow Valley Resort</li><li>Radisson Shimla</li><li>Hotel Combermere</li></ul></div>
+    <div class="detail-section"><h2 class="detail-section-title"><span class="icon">💡</span> Why Visit Shimla?</h2><p>Shimla is perfect for those seeking cool mountain air, colonial charm and the magic of snowfall. It's India's most beloved winter hill station for a reason.</p></div>
+  </div>
+  <aside class="detail-sidebar">
+    <div class="package-card">
+      <div class="package-label">Tour Package</div>
+      <div class="package-name">3 Days / 2 Nights Hill Station Package</div>
+      <ul class="package-features"><li><span class='check'>✓</span> Mountain view hotel</li><li><span class='check'>✓</span> Kufri day tour</li><li><span class='check'>✓</span> Mall Road sightseeing</li><li><span class='check'>✓</span> All transfers included</li></ul>
+      <div class="package-price-row">
+        <span class="package-currency">₹</span>
+        <span class="package-amount">8,999</span>
+        <span class="package-per">/ person</span>
+      </div>
+      <a href="/booking/Shimla/₹8999 Package" class="book-btn-3d">✦ Book This Trip</a>
+    </div>
+    <div class="info-card">
+      <div class="info-row"><div class="info-icon">📅</div><div><div class="info-label">Best Time</div><div class="info-value">October – February</div></div></div>
+      <div class="info-row"><div class="info-icon">📍</div><div><div class="info-label">Location</div><div class="info-value">Himachal Pradesh, India</div></div></div>
+      <div class="info-row"><div class="info-icon">⭐</div><div><div class="info-label">Rating</div><div class="info-value">4.8 / 5.0</div></div></div>
+      <div class="info-row"><div class="info-icon">🛡️</div><div><div class="info-label">Safety</div><div class="info-value">Insured & Verified</div></div></div>
+    </div>
+  </aside>
+</div>
+<footer class="footer">
+  <div class="footer-logo">TOUR<span>IFY</span></div>
+  <p class="footer-text">© 2025 Tourify.</p>
+  <div class="footer-links"><a href="/destinations">Destinations</a><a href="/logout">Logout</a></div>
+</footer>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body></html>

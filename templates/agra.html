@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agra Tourism — Tourify</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<canvas id="stars-canvas"></canvas>
+
+<nav class="navbar">
+  <a href="/" class="nav-logo">TOUR<span>IFY</span></a>
+  <ul class="nav-links">
+    <li><a href="/destinations">← All Destinations</a></li>
+    <li><a href="/logout">Logout</a></li>
+  </ul>
+</nav>
+
+<!-- CINEMATIC HERO -->
+<section class="detail-hero">
+  <img class="detail-hero-img" src="https://images.unsplash.com/photo-1564507592333-c60657eea523?w=1200" alt="Agra">
+  <div class="detail-hero-overlay"></div>
+  <div class="detail-hero-content">
+    <span class="detail-tag">✦ Uttar Pradesh ✦</span>
+    <h1 class="detail-hero-title">Agra</h1>
+  </div>
+</section>
+
+<!-- CONTENT -->
+<div class="detail-body">
+  <div class="detail-main">
+
+    <div class="detail-section">
+      <h2 class="detail-section-title"><span class="icon">🌍</span> About Agra</h2>
+      <p>Agra is one of India's most iconic cities, home to Mughal architecture that has stood for centuries. The city breathes history through every stone — from the majestic Taj Mahal at sunrise to the towering walls of Agra Fort.</p>
+    </div>
+
+    <div class="detail-section">
+      <h2 class="detail-section-title"><span class="icon">📍</span> Top Attractions</h2>
+      <ul class="detail-list"><li>Taj Mahal</li><li>Agra Fort</li><li>Fatehpur Sikri</li><li>Mehtab Bagh</li><li>Itmad-ud-Daulah</li></ul>
+    </div>
+
+    <div class="detail-section">
+      <h2 class="detail-section-title"><span class="icon">🖼️</span> Photo Gallery</h2>
+      <div class="gallery-3d">
+        <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?w=1200?w=400&q=80" alt="Agra view 1">
+        <img src="https://images.unsplash.com/photo-1548013146-72479768bada?w=400?w=400&q=80" alt="Agra view 2">
+        <img src="https://images.unsplash.com/photo-1585135497273-1a86b09fe70e?w=400?w=400&q=80" alt="Agra view 3">
+      </div>
+    </div>
+
+    <div class="detail-section">
+      <h2 class="detail-section-title"><span class="icon">🍽️</span> Famous Food</h2>
+      <p>Agra Petha, Bedai & Jalebi, Mughlai Biryani, and the world-famous Dalmoth snack are culinary highlights of this city.</p>
+    </div>
+
+    <div class="detail-section">
+      <h2 class="detail-section-title"><span class="icon">🎯</span> Popular Activities</h2>
+      <p>Sunrise photography at Taj Mahal, heritage walks through Agra Fort, shopping for marble inlay handicrafts, camel rides, and moonlight viewing at Mehtab Bagh.</p>
+    </div>
+
+    <div class="detail-section">
+      <h2 class="detail-section-title"><span class="icon">🏨</span> Recommended Hotels</h2>
+      <ul class="detail-list"><li>Hotel Taj Resorts</li><li>Radisson Hotel Agra</li><li>Hotel Amar</li><li>Crystal Sarovar Premiere</li></ul>
+    </div>
+
+    <div class="detail-section">
+      <h2 class="detail-section-title"><span class="icon">💡</span> Why Visit Agra?</h2>
+      <p>Agra offers an irreplaceable encounter with one of humanity's greatest architectural achievements. The Taj Mahal at sunrise is a once-in-a-lifetime moment no photograph fully captures.</p>
+    </div>
+
+  </div>
+
+  <!-- SIDEBAR -->
+  <aside class="detail-sidebar">
+    <div class="package-card">
+      <div class="package-label">Tour Package</div>
+      <div class="package-name">3 Days / 2 Nights Heritage Tour</div>
+      <ul class="package-features">
+        <li><span class='check'>✓</span> Hotel accommodation (2 nights)</li><li><span class='check'>✓</span> Taj Mahal guided tour</li><li><span class='check'>✓</span> All local transfers</li><li><span class='check'>✓</span> Daily breakfast included</li>
+      </ul>
+      <div class="package-price-row">
+        <span class="package-currency">₹</span>
+        <span class="package-amount">7,999</span>
+        <span class="package-per">/ person</span>
+      </div>
+      <a href="/booking/Agra/₹7999 Package" class="book-btn-3d">✦ Book This Trip</a>
+    </div>
+
+    <div class="info-card">
+      <div class="info-row">
+        <div class="info-icon">📅</div>
+        <div>
+          <div class="info-label">Best Time</div>
+          <div class="info-value">October – March</div>
+        </div>
+      </div>
+      <div class="info-row">
+        <div class="info-icon">📍</div>
+        <div>
+          <div class="info-label">Location</div>
+          <div class="info-value">Uttar Pradesh, India</div>
+        </div>
+      </div>
+      <div class="info-row">
+        <div class="info-icon">⭐</div>
+        <div>
+          <div class="info-label">Rating</div>
+          <div class="info-value">4.8 / 5.0 (2.4k reviews)</div>
+        </div>
+      </div>
+      <div class="info-row">
+        <div class="info-icon">🛡️</div>
+        <div>
+          <div class="info-label">Safety</div>
+          <div class="info-value">Fully Insured & Verified</div>
+        </div>
+      </div>
+    </div>
+  </aside>
+</div>
+
+<footer class="footer">
+  <div class="footer-logo">TOUR<span>IFY</span></div>
+  <p class="footer-text">© 2025 Tourify. All rights reserved.</p>
+  <div class="footer-links">
+    <a href="/destinations">All Destinations</a>
+    <a href="/logout">Logout</a>
+  </div>
+</footer>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

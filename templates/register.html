@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register — Tourify</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<canvas id="stars-canvas"></canvas>
+<nav class="navbar">
+  <a href="/" class="nav-logo">TOUR<span>IFY</span></a>
+</nav>
+<div class="form-page">
+  <div class="form-container">
+    <div class="form-header">
+      <a href="/" class="form-logo">TOUR<span>IFY</span></a>
+      <h1 class="form-title">Join Tourify</h1>
+      <p class="form-subtitle">Create your free account and start exploring</p>
+    </div>
+    <div class="glass-card">
+      <form method="POST">
+        <div class="field">
+          <label>Full Name</label>
+          <input type="text" name="name" placeholder="Your full name" required>
+        </div>
+        <div class="field">
+          <label>Email Address</label>
+          <input type="email" name="email" placeholder="you@example.com" required>
+        </div>
+        <div class="field">
+          <label>Password</label>
+          <input type="password" name="password" placeholder="Create a strong password" required>
+        </div>
+        <button type="submit" class="submit-btn">Create Account →</button>
+      </form>
+      <div class="form-divider">or</div>
+      <div class="form-footer">
+        Already have an account? <a href="/login">Sign in</a>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

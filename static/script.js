@@ -1,0 +1,1 @@
+console.log("Tourism Management System Loaded");

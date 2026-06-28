@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking Confirmed — Tourify</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<canvas id="stars-canvas"></canvas>
+<nav class="navbar">
+  <a href="/" class="nav-logo">TOUR<span>IFY</span></a>
+</nav>
+<div class="success-page">
+  <div class="success-card">
+    <div class="success-icon">✈️</div>
+    <h1 class="success-title">You're Going!</h1>
+    <p class="success-text">Your booking is confirmed and your adventure begins soon. Check your email for the full itinerary and travel details.</p>
+    <div class="success-id booking-ref-id">TRF-XXXX0000</div>
+    <a href="/destinations" class="btn-primary" style="display:inline-flex;margin:0 auto;">Explore More Destinations</a>
+  </div>
+</div>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

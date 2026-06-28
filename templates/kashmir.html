@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kashmir Tourism — Tourify</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<canvas id="stars-canvas"></canvas>
+<nav class="navbar">
+  <a href="/" class="nav-logo">TOUR<span>IFY</span></a>
+  <ul class="nav-links"><li><a href="/destinations">← All Destinations</a></li><li><a href="/logout">Logout</a></li></ul>
+</nav>
+<section class="detail-hero">
+  <img class="detail-hero-img" src="https://images.unsplash.com/photo-1598091383021-15ddea10925d?w=1200" alt="Kashmir">
+  <div class="detail-hero-overlay"></div>
+  <div class="detail-hero-content">
+    <span class="detail-tag">✦ Jammu & Kashmir ✦</span>
+    <h1 class="detail-hero-title">Kashmir</h1>
+  </div>
+</section>
+<div class="detail-body">
+  <div class="detail-main">
+    <div class="detail-section"><h2 class="detail-section-title"><span class="icon">🌍</span> About Kashmir</h2><p>Kashmir — Paradise on Earth. Shimmering Dal Lake with its floating gardens, the meadows of Gulmarg blanketed in snow, the saffron fields of Pampore glowing gold. Kashmir is not just a place; it's a feeling of pure, overwhelming beauty.</p></div>
+    <div class="detail-section"><h2 class="detail-section-title"><span class="icon">📍</span> Top Attractions</h2><ul class="detail-list"><li>Dal Lake & Shikara Rides</li><li>Gulmarg Gondola</li><li>Pahalgam Valley</li><li>Sonmarg Glacier</li><li>Mughal Gardens</li></ul></div>
+    <div class="detail-section">
+      <h2 class="detail-section-title"><span class="icon">🖼️</span> Photo Gallery</h2>
+      <div class="gallery-3d">
+        <img src="https://images.unsplash.com/photo-1598091383021-15ddea10925d?w=1200?w=400&q=80" alt="Kashmir 1">
+        <img src="https://images.unsplash.com/photo-1566837945700-30057527ade0?w=400?w=400&q=80" alt="Kashmir 2">
+        <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=400?w=400&q=80" alt="Kashmir 3">
+      </div>
+    </div>
+    <div class="detail-section"><h2 class="detail-section-title"><span class="icon">🍽️</span> Famous Food</h2><p>Rogan Josh, Kashmiri Pulao, Dum Aloo, Gushtaba meatballs, and the warming Kahwa saffron tea — a cuisine worthy of Mughal emperors.</p></div>
+    <div class="detail-section"><h2 class="detail-section-title"><span class="icon">🎯</span> Popular Activities</h2><p>Shikara rides at sunrise on Dal Lake, skiing and gondola rides at Gulmarg, pony treks to Betaab Valley, carpet weaving workshops, and overnight houseboat stays.</p></div>
+    <div class="detail-section"><h2 class="detail-section-title"><span class="icon">🏨</span> Recommended Hotels</h2><ul class="detail-list"><li>The Khyber Himalayan Resort</li><li>Vivanta Dal View</li><li>Hotel Pine Spring</li><li>Radisson Srinagar</li></ul></div>
+    <div class="detail-section"><h2 class="detail-section-title"><span class="icon">💡</span> Why Visit Kashmir?</h2><p>Kashmir transcends description. It must be experienced — the snow-capped peaks reflected in still lake water, the call to prayer echoing through cedar forests at dawn.</p></div>
+  </div>
+  <aside class="detail-sidebar">
+    <div class="package-card">
+      <div class="package-label">Tour Package</div>
+      <div class="package-name">6 Days / 5 Nights Paradise Package</div>
+      <ul class="package-features"><li><span class='check'>✓</span> Houseboat on Dal Lake</li><li><span class='check'>✓</span> Gulmarg snow trip</li><li><span class='check'>✓</span> Shikara rides included</li><li><span class='check'>✓</span> All meals & transfers</li></ul>
+      <div class="package-price-row">
+        <span class="package-currency">₹</span>
+        <span class="package-amount">18,999</span>
+        <span class="package-per">/ person</span>
+      </div>
+      <a href="/booking/Kashmir/₹18999 Package" class="book-btn-3d">✦ Book This Trip</a>
+    </div>
+    <div class="info-card">
+      <div class="info-row"><div class="info-icon">📅</div><div><div class="info-label">Best Time</div><div class="info-value">March – October (sightseeing) / Dec – Feb (snowfall)</div></div></div>
+      <div class="info-row"><div class="info-icon">📍</div><div><div class="info-label">Location</div><div class="info-value">Jammu & Kashmir, India</div></div></div>
+      <div class="info-row"><div class="info-icon">⭐</div><div><div class="info-label">Rating</div><div class="info-value">4.8 / 5.0</div></div></div>
+      <div class="info-row"><div class="info-icon">🛡️</div><div><div class="info-label">Safety</div><div class="info-value">Insured & Verified</div></div></div>
+    </div>
+  </aside>
+</div>
+<footer class="footer">
+  <div class="footer-logo">TOUR<span>IFY</span></div>
+  <p class="footer-text">© 2025 Tourify.</p>
+  <div class="footer-links"><a href="/destinations">Destinations</a><a href="/logout">Logout</a></div>
+</footer>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body></html>

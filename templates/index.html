@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tourify — Discover Incredible India</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="home-page">
+
+<canvas id="stars-canvas"></canvas>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <a href="/" class="nav-logo">TOUR<span>IFY</span></a>
+  <ul class="nav-links">
+    <li><a href="/destinations">Destinations</a></li>
+    <li><a href="/login">Login</a></li>
+    <li><a href="/register" class="nav-cta">Start Journey</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-orb hero-orb-1"></div>
+  <div class="hero-orb hero-orb-2"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">✦ Discover Incredible India ✦</div>
+    <h1 class="hero-title">
+      <span class="line1">Explore the</span>
+      <span class="line2">World's Soul</span>
+    </h1>
+    <p class="hero-subtitle">
+      From snow-capped Himalayan peaks to golden sun-drenched beaches — 
+      Tourify crafts journeys that become lifelong memories.
+    </p>
+    <div class="hero-buttons">
+      <a href="/destinations" class="btn-primary">✦ Explore Destinations</a>
+      <a href="/register" class="btn-secondary">Start Free →</a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span class="scroll-text">Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats-strip">
+  <div class="stat-item">
+    <div class="stat-num">8+</div>
+    <div class="stat-label">Destinations</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">50K+</div>
+    <div class="stat-label">Happy Travelers</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">99%</div>
+    <div class="stat-label">Satisfaction</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">24/7</div>
+    <div class="stat-label">Support</div>
+  </div>
+</div>
+
+<!-- FEATURES -->
+<section class="features-section">
+  <div class="section-header">
+    <div class="section-eyebrow">Why Choose Us</div>
+    <h2 class="section-title">Travel Like <span>Royalty</span></h2>
+    <div class="section-line"><span></span><i>✦</i><span></span></div>
+  </div>
+  <div class="features-grid">
+    <div class="feature-card">
+      <div class="feature-icon">🏆</div>
+      <h3 class="feature-title">Curated Packages</h3>
+      <p class="feature-text">Every package is handcrafted by travel experts with 20+ years of experience in Indian tourism.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🛡️</div>
+      <h3 class="feature-title">Safe & Secure</h3>
+      <p class="feature-text">Your bookings are protected with end-to-end encryption and verified hotel partnerships.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">💎</div>
+      <h3 class="feature-title">Best Price Guarantee</h3>
+      <p class="feature-text">We match any lower price you find. Premium experiences shouldn't cost a fortune.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-logo">TOUR<span>IFY</span></div>
+  <p class="footer-text">© 2025 Tourify. Crafting journeys, creating memories.</p>
+  <div class="footer-links">
+    <a href="/destinations">Destinations</a>
+    <a href="/register">Register</a>
+    <a href="/login">Login</a>
+  </div>
+</footer>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

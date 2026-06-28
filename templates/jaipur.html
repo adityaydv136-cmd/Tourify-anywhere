@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jaipur Tourism — Tourify</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<canvas id="stars-canvas"></canvas>
+<nav class="navbar">
+  <a href="/" class="nav-logo">TOUR<span>IFY</span></a>
+  <ul class="nav-links"><li><a href="/destinations">← All Destinations</a></li><li><a href="/logout">Logout</a></li></ul>
+</nav>
+<section class="detail-hero">
+  <img class="detail-hero-img" src="https://images.unsplash.com/photo-1477587458883-47145ed94245?w=1200" alt="Jaipur">
+  <div class="detail-hero-overlay"></div>
+  <div class="detail-hero-content">
+    <span class="detail-tag">✦ Rajasthan ✦</span>
+    <h1 class="detail-hero-title">Jaipur</h1>
+  </div>
+</section>
+<div class="detail-body">
+  <div class="detail-main">
+    <div class="detail-section"><h2 class="detail-section-title"><span class="icon">🌍</span> About Jaipur</h2><p>Jaipur, the Pink City, is the royal heart of Rajasthan. Its rose-pink walls, magnificent forts, and opulent palaces transport visitors to the era of Maharajas. Jaipur is a sensory explosion — vibrant bazaars, folk music, camel rides, and centuries of Rajput grandeur.</p></div>
+    <div class="detail-section"><h2 class="detail-section-title"><span class="icon">📍</span> Top Attractions</h2><ul class="detail-list"><li>Hawa Mahal</li><li>Amber Fort</li><li>City Palace</li><li>Jantar Mantar Observatory</li><li>Nahargarh Fort</li></ul></div>
+    <div class="detail-section">
+      <h2 class="detail-section-title"><span class="icon">🖼️</span> Photo Gallery</h2>
+      <div class="gallery-3d">
+        <img src="https://images.unsplash.com/photo-1477587458883-47145ed94245?w=1200?w=400&q=80" alt="Jaipur 1">
+        <img src="https://images.unsplash.com/photo-1599661046289-e31897846e41?w=400?w=400&q=80" alt="Jaipur 2">
+        <img src="https://images.unsplash.com/photo-1603204077779-bed963ea7d0e?w=400?w=400&q=80" alt="Jaipur 3">
+      </div>
+    </div>
+    <div class="detail-section"><h2 class="detail-section-title"><span class="icon">🍽️</span> Famous Food</h2><p>Dal Baati Churma, Ghewar dessert, Pyaaz Kachori, Laal Maas (red mutton curry), and the famous Kulfi Faluda from local shops.</p></div>
+    <div class="detail-section"><h2 class="detail-section-title"><span class="icon">🎯</span> Popular Activities</h2><p>Elephant rides to Amber Fort, hot air balloon rides over the Pink City, shopping for gemstones and block-printed textiles, camel safaris, and cultural folk dance evenings.</p></div>
+    <div class="detail-section"><h2 class="detail-section-title"><span class="icon">🏨</span> Recommended Hotels</h2><ul class="detail-list"><li>Rambagh Palace</li><li>ITC Rajputana</li><li>Jaipur Marriott Hotel</li><li>Holiday Inn Jaipur</li></ul></div>
+    <div class="detail-section"><h2 class="detail-section-title"><span class="icon">💡</span> Why Visit Jaipur?</h2><p>Jaipur showcases Rajasthan's royal legacy like nowhere else. Every fort, palace, and bazaar lane tells a story of valor, art, and architectural genius spanning centuries.</p></div>
+  </div>
+  <aside class="detail-sidebar">
+    <div class="package-card">
+      <div class="package-label">Tour Package</div>
+      <div class="package-name">3 Days / 2 Nights Royal Heritage Package</div>
+      <ul class="package-features"><li><span class='check'>✓</span> Heritage hotel stay</li><li><span class='check'>✓</span> Fort & palace tours</li><li><span class='check'>✓</span> Elephant ride experience</li><li><span class='check'>✓</span> Cultural dinner show</li></ul>
+      <div class="package-price-row">
+        <span class="package-currency">₹</span>
+        <span class="package-amount">9,999</span>
+        <span class="package-per">/ person</span>
+      </div>
+      <a href="/booking/Jaipur/₹9999 Package" class="book-btn-3d">✦ Book This Trip</a>
+    </div>
+    <div class="info-card">
+      <div class="info-row"><div class="info-icon">📅</div><div><div class="info-label">Best Time</div><div class="info-value">October – March</div></div></div>
+      <div class="info-row"><div class="info-icon">📍</div><div><div class="info-label">Location</div><div class="info-value">Rajasthan, India</div></div></div>
+      <div class="info-row"><div class="info-icon">⭐</div><div><div class="info-label">Rating</div><div class="info-value">4.8 / 5.0</div></div></div>
+      <div class="info-row"><div class="info-icon">🛡️</div><div><div class="info-label">Safety</div><div class="info-value">Insured & Verified</div></div></div>
+    </div>
+  </aside>
+</div>
+<footer class="footer">
+  <div class="footer-logo">TOUR<span>IFY</span></div>
+  <p class="footer-text">© 2025 Tourify.</p>
+  <div class="footer-links"><a href="/destinations">Destinations</a><a href="/logout">Logout</a></div>
+</footer>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body></html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destinations — Tourify</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<canvas id="stars-canvas"></canvas>
+
+<nav class="navbar">
+  <a href="/" class="nav-logo">TOUR<span>IFY</span></a>
+  <ul class="nav-links">
+    <li><a href="/destinations">Destinations</a></li>
+    <li><a href="/logout">Logout</a></li>
+  </ul>
+</nav>
+
+<section class="destinations-section" style="padding-top:120px;">
+  <div class="section-header">
+    <div class="section-eyebrow">✦ Incredible India ✦</div>
+    <h2 class="section-title">Choose Your <span>Adventure</span></h2>
+    <div class="section-line"><span></span><i>✦</i><span></span></div>
+  </div>
+
+  <div class="cards-3d">
+
+    <div class="card-3d">
+      <img class="card-img" src="https://images.unsplash.com/photo-1564507592333-c60657eea523?w=800" alt="Agra">
+      <div class="card-overlay"></div>
+      <div class="card-badge">Heritage</div>
+      <div class="card-content">
+        <div class="card-tag">Uttar Pradesh</div>
+        <h3 class="card-title">Agra</h3>
+        <p class="card-desc">Home of the Taj Mahal — one of the Seven Wonders of the World.</p>
+        <div class="card-footer">
+          <span class="card-price">₹7,999</span>
+          <a href="/agra" class="card-link">Explore →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-3d">
+      <img class="card-img" src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=800" alt="Goa">
+      <div class="card-overlay"></div>
+      <div class="card-badge">Beach</div>
+      <div class="card-content">
+        <div class="card-tag">Goa</div>
+        <h3 class="card-title">Goa</h3>
+        <p class="card-desc">Golden beaches, vibrant nightlife and Portuguese charm.</p>
+        <div class="card-footer">
+          <span class="card-price">₹12,999</span>
+          <a href="/goa" class="card-link">Explore →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-3d">
+      <img class="card-img" src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800" alt="Shimla">
+      <div class="card-overlay"></div>
+      <div class="card-badge">Hill Station</div>
+      <div class="card-content">
+        <div class="card-tag">Himachal Pradesh</div>
+        <h3 class="card-title">Shimla</h3>
+        <p class="card-desc">Queen of Hills — snowfall, mountains and colonial magic.</p>
+        <div class="card-footer">
+          <span class="card-price">₹8,999</span>
+          <a href="/shimla" class="card-link">Explore →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-3d">
+      <img class="card-img" src="https://images.unsplash.com/photo-1626014303757-d8edfd2bb9a5?w=800" alt="Manali">
+      <div class="card-overlay"></div>
+      <div class="card-badge">Adventure</div>
+      <div class="card-content">
+        <div class="card-tag">Himachal Pradesh</div>
+        <h3 class="card-title">Manali</h3>
+        <p class="card-desc">Snow-capped peaks and thrilling adventure sports await.</p>
+        <div class="card-footer">
+          <span class="card-price">₹14,999</span>
+          <a href="/manali" class="card-link">Explore →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-3d">
+      <img class="card-img" src="https://images.unsplash.com/photo-1477587458883-47145ed94245?w=800" alt="Jaipur">
+      <div class="card-overlay"></div>
+      <div class="card-badge">Royal</div>
+      <div class="card-content">
+        <div class="card-tag">Rajasthan</div>
+        <h3 class="card-title">Jaipur</h3>
+        <p class="card-desc">The Pink City — royal forts, palaces and desert mystique.</p>
+        <div class="card-footer">
+          <span class="card-price">₹9,999</span>
+          <a href="/jaipur" class="card-link">Explore →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-3d">
+      <img class="card-img" src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=800" alt="Kerala">
+      <div class="card-overlay"></div>
+      <div class="card-badge">Nature</div>
+      <div class="card-content">
+        <div class="card-tag">God's Own Country</div>
+        <h3 class="card-title">Kerala</h3>
+        <p class="card-desc">Backwaters, lush greenery and traditional Ayurveda retreats.</p>
+        <div class="card-footer">
+          <span class="card-price">₹16,999</span>
+          <a href="/kerala" class="card-link">Explore →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-3d">
+      <img class="card-img" src="https://images.unsplash.com/photo-1598091383021-15ddea10925d?w=800" alt="Kashmir">
+      <div class="card-overlay"></div>
+      <div class="card-badge">Paradise</div>
+      <div class="card-content">
+        <div class="card-tag">Jammu & Kashmir</div>
+        <h3 class="card-title">Kashmir</h3>
+        <p class="card-desc">Paradise on Earth — valleys, Dal Lake and snowfall magic.</p>
+        <div class="card-footer">
+          <span class="card-price">₹18,999</span>
+          <a href="/kashmir" class="card-link">Explore →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-3d">
+      <img class="card-img" src="https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800" alt="Delhi">
+      <div class="card-overlay"></div>
+      <div class="card-badge">Capital</div>
+      <div class="card-content">
+        <div class="card-tag">New Delhi</div>
+        <h3 class="card-title">Delhi</h3>
+        <p class="card-desc">Ancient monuments meet modern buzz in India's capital.</p>
+        <div class="card-footer">
+          <span class="card-price">₹6,999</span>
+          <a href="/delhi" class="card-link">Explore →</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer" style="margin-top:80px;">
+  <div class="footer-logo">TOUR<span>IFY</span></div>
+  <p class="footer-text">© 2025 Tourify. All rights reserved.</p>
+  <div class="footer-links">
+    <a href="/">Home</a>
+    <a href="/logout">Logout</a>
+  </div>
+</footer>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

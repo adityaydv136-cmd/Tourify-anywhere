@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Your Trip — Tourify</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<canvas id="stars-canvas"></canvas>
+<nav class="navbar">
+  <a href="/" class="nav-logo">TOUR<span>IFY</span></a>
+  <ul class="nav-links"><li><a href="/destinations">← Back to Destinations</a></li></ul>
+</nav>
+<div class="form-page">
+  <div class="form-container" style="max-width:500px;">
+    <div class="form-header">
+      <a href="/" class="form-logo">TOUR<span>IFY</span></a>
+      <h1 class="form-title">Confirm Booking</h1>
+      <p class="form-subtitle">You're one step away from your dream trip</p>
+    </div>
+    <div class="glass-card">
+      <div class="booking-summary">
+        <div>
+          <div style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:4px;">Destination</div>
+          <div class="booking-dest">{{ destination }}</div>
+        </div>
+        <div style="text-align:right;">
+          <div style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:4px;">Package</div>
+          <div class="booking-price">{{ hotel }}</div>
+        </div>
+      </div>
+      <form method="POST">
+        <div class="field">
+          <label>Full Name</label>
+          <input type="text" placeholder="Enter your full name" required>
+        </div>
+        <div class="field">
+          <label>Email Address</label>
+          <input type="email" placeholder="Enter your email" required>
+        </div>
+        <div class="field">
+          <label>Contact Number</label>
+          <input type="tel" placeholder="+91 00000 00000" required>
+        </div>
+        <div class="field">
+          <label>Number of Travelers</label>
+          <input type="number" placeholder="e.g. 2" min="1" max="20" required>
+        </div>
+        <div class="field">
+          <label>Travel Date</label>
+          <input type="date" required>
+        </div>
+        <button type="submit" class="submit-btn">✦ Confirm & Book Now</button>
+      </form>
+    </div>
+  </div>
+</div>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
